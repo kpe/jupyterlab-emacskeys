@@ -1,8 +1,15 @@
 language: node_js
-
 node_js:
-    - "node"
+- node
 install:
-    - npm install -g typescript tslint
+- npm install -g typescript tslint
 script:
-    - tslint src/index.ts
+- tslint src/index.ts
+deploy:
+  provider: npm
+  email: kpe.npm@gmailbox.org
+  api_key:
+    secure: D5k4Wz/59m2q5tivWFiLk4X47f50K1HzEU4scKvBqnGeqNclih5xD7CHmGKbQbifcB+1RiLsram/NsNTx6g2qRqjLjZlDoAMFC1DvxJd3Qukkh1txZKYxSroGV1xTmB5vSQkPXeMo6fAVY0/Jmn5G7nSub7KdjBbY0IxmapuRm8rHQB10v1Gm/Hm/1Ece89JHnjfW3bRhAVYmEsz182H5dRBMMOSt5WQE9HKyH+KNhMVJvX3aCRFg4nViaI/3+/4Z7Qu+brCrMIsiZLmaOFsfQ6uog9uX338xmBWS6y8Gm1aVe343tuWUBdaUajTvMylU+gHYQ/Llp5VRVi71mqO0SX0LktG88xFpIqPNldeLYNtvO2QRM0OAO1PhVbi2qe4PT4WNA2X8ySMIJA7faKlgOxqIzj4HKTFYiULC0uohEsn0qt8lipmndQxzrv2OiAsLqPKZ/hcJ/IiU/ZNtwhN8EQPlIOG5CK0gH21GP9nJx7T88FgTI8LZPJQv0J+tNziuwoBXeaSHtpjj7mnw3Oz6JfMd5WUUUQ55xKvLshwEpIGosd8Ea/swqy/TV4EOkrb0kFRQ98MXDfn0LAErGBPU1MTvxYIRV2cW1fpAdzRMb/tfjhVciPnmKu0L3zloRh6hteKMxL9m8OOTQLC85AnfRI1Hq2npNkfU2O06HCFuso=
+  on:
+    tags: true
+    repo: kpe/jupyterlab-emacskeys
