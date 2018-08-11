@@ -15,3 +15,4 @@ deploy:
   on:
     tags: true
     repo: kpe/jupyterlab-emacskeys
+  skip_cleanup: true
