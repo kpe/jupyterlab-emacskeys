@@ -1,9 +1,11 @@
 language: node_js
 node_js:
-- node
+- "9"
 install:
 - npm install -g typescript tslint
 script:
+- npm install
+- npm run build
 - tslint src/index.ts
 deploy:
   provider: npm
