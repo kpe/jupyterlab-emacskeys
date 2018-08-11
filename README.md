@@ -1,5 +1,7 @@
 # jupyterlab-emacskeys
 
+[![Build Status](https://travis-ci.org/kpe/jupyterlab-emacskeys.svg?branch=master)](https://travis-ci.org/kpe/jupyterlab-emacskeys.svg?branch=master)
+
 Currently JupyterLab seems to support emacs keybindings only in its text editor,
 but not in the notebook cells. This might be a simply a bug, as changing the
 default config in codemirror helps, but until it is fixed, I'm using this
