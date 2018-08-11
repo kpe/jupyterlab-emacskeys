@@ -5,14 +5,14 @@
 [![npm downloads](https://img.shields.io/npm/dw/jupyterlab-emacskeys.svg)](https://www.npmjs.com/package/jupyterlab-emacskeys)
 
 Currently JupyterLab seems to support emacs keybindings only in its text editor,
-but not in the notebook cells. This might be a simply a bug, as changing the
+but not in the notebook cells. This might be simply a bug, as changing the
 default config in codemirror helps, but until it is fixed, I'm using this
 method of changing the default keymap in codemirror.
 
 ## Origin
 
 I was badly missing the emacs keybindings support in the notebook cells
-in the current version of jupyterlab, and I was not familiar with
+in the current version of jupyterlab, and as I was not familiar with
 the jupyter development infrastructure, I've just forked the [jwkvam/jupyterlab-vim](https://github.com/jwkvam/jupyterlab-vim) repo and adapted it to simply set the `keyMap=emacs` in codemirror.
 
 
