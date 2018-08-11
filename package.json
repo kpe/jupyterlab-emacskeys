@@ -18,7 +18,8 @@
     "extension",
     "jupyter",
     "jupyterlab",
-    "jupyterlab-extension"
+    "jupyterlab-extension",
+    "emacs-keybindings"
   ],
   "scripts": {
     "build": "tsc",
