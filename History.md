@@ -1,6 +1,6 @@
 # History
 
-## 0.1.5 / 2018-08-24
+## 0.2.0 / 2018-08-24
 
   * updated to jupiterlab 0.18.4
 
