@@ -1,8 +1,16 @@
 # jupyterlab-emacskeys
 
-[![npm version](https://badge.fury.io/js/jupyterlab-emacskeys.svg)](https://www.npmjs.com/package/jupyterlab-emacskeys)
-[![Build Status](https://travis-ci.org/kpe/jupyterlab-emacskeys.svg?branch=master)](https://travis-ci.org/kpe/jupyterlab-emacskeys.svg?branch=master)
-[![npm downloads](https://img.shields.io/npm/dw/jupyterlab-emacskeys.svg)](https://www.npmjs.com/package/jupyterlab-emacskeys)
+.. image:: https://badge.fury.io/js/jupyterlab-emacskeys.svg
+        :target: https://www.npmjs.com/package/jupyterlab-emacskeys
+		:alt: npm version
+
+.. image:: https://travis-ci.org/kpe/jupyterlab-emacskeys.svg?branch=master
+	    :target: https://travis-ci.org/kpe/jupyterlab-emacskeys.svg?branch=master
+		:alt: Build Status
+
+.. image:: https://img.shields.io/npm/dw/jupyterlab-emacskeys.svg
+        :target: https://www.npmjs.com/package/jupyterlab-emacskeys
+		:alt: npm downloads
 
 Currently JupyterLab seems to support emacs keybindings only in its text editor,
 but not in the notebook cells. This might be simply a bug, as changing the
