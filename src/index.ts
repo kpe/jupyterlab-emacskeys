@@ -38,6 +38,10 @@ class EmacsCell {
         if (activeCell !== null) {
             let editor = activeCell.editor as CodeMirrorEditor;
             editor.setOption('keyMap', 'emacs');
+            editor.setOption('extraKeys', {
+                'Ctrl-/': 'undo',
+                'Ctrl-Shift--': 'undo'
+            });
         }
     }
 

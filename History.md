@@ -1,5 +1,10 @@
 # History
 
+## 0.4.0 / 2018-12-11
+
+  * fixes Ctrl-/ and Ctrl-Shift-- to undo. You might want to override the default binding for notebook:split-cell-at-cursor so the second binding could take effect.
+
+
 ## 0.3.0 / 2018-10-09
 
   * updated to jupiterlab 0.19.1
