@@ -5,9 +5,9 @@
 [![npm downloads](https://img.shields.io/npm/dw/jupyterlab-emacskeys.svg)](https://www.npmjs.com/package/jupyterlab-emacskeys)
 
 Currently JupyterLab seems to support emacs keybindings only in its text editor,
-but not in the notebook cells. This might be simply a bug, as changing the
+but not in the notebook cells. This ~~might be simply a~~ bug (actually it seems to be intentional - see [#3885](https://github.com/jupyterlab/jupyterlab/issues/3885#issuecomment-412294469)), as changing the
 default config in codemirror would help, but until it is fixed, I'm using this
-method of changing the default keymap in codemirror to `emacs`.
+method of changing the default keymap in codemirror to `emacs`. 
 
 ## Origin
 
