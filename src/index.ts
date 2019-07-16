@@ -1,6 +1,6 @@
 
 import {
-    JupyterLab, JupyterLabPlugin
+    JupyterFrontEnd, JupyterFrontEndPlugin
 } from '@jupyterlab/application';
 
 import {
@@ -15,10 +15,12 @@ import {
 
 import '../style/index.css';
 
+import 'codemirror/keymap/emacs.js';
+
 /**
  * Initialization data for the jupyterlab_vim extension.
  */
-const extension: JupyterLabPlugin<void> = {
+const extension: JupyterFrontEndPlugin<void> = {
     id: 'jupyterlab-emacskeys',
     autoStart: true,
     activate: activateCellEmacs,
@@ -27,7 +29,7 @@ const extension: JupyterLabPlugin<void> = {
 
 class EmacsCell {
 
-    constructor(app: JupyterLab, tracker: INotebookTracker) {
+    constructor(app: JupyterFrontEnd, tracker: INotebookTracker) {
         this._tracker = tracker;
         this._onActiveCellChanged();
         this._tracker.activeCellChanged.connect(this._onActiveCellChanged, this);
@@ -48,7 +50,7 @@ class EmacsCell {
     private _tracker: INotebookTracker;
 }
 
-function activateCellEmacs(app: JupyterLab, tracker: INotebookTracker): Promise<void> {
+function activateCellEmacs(app: JupyterFrontEnd, tracker: INotebookTracker): Promise<void> {
 
     Promise.all([app.restored]).then(([args]) => {
         // tslint:disable:no-unused-expression

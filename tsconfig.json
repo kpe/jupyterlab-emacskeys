@@ -1,16 +1,16 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
     "declaration": true,
     "noImplicitAny": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
     "noEmitOnError": true,
     "noUnusedLocals": true,
     "module": "commonjs",
     "moduleResolution": "node",
-    "target": "ES6",
-    "outDir": "./lib",
-    "lib":["ES6", "DOM"],
-    "jsx":"react"
+    "target": "ES2017",
+    "outDir": "lib",
+    "rootDir": "src",
   },
   "include": ["src/*"]
 }
