@@ -1,5 +1,9 @@
 # History
 
+## 0.5.0 / 2019-07-16
+
+  * updated to jupyterlab 1.0.1
+
 ## 0.4.0 / 2018-12-11
 
   * fixes Ctrl-/ and Ctrl-Shift-- to undo. You might want to override the default binding for notebook:split-cell-at-cursor so the second binding could take effect.

@@ -21,13 +21,53 @@ the jupyter development environment, I've just forked the [jwkvam/jupyterlab-vim
 ## Install
 ### Prerequisites
 
-* JupyterLab 0.33
+* JupyterLab 1.0.1
+
 
 ### Install or upgrade
 
 ```bash
 jupyter labextension install jupyterlab-emacskeys
 ```
+
+### Tweaks
+
+Because some common emacs keybindings are already reserved by jupyter-lab, you might have to reassign them (see issue #1), i.e.:
+
+
+    {
+        // Keyboard Shortcuts
+        // @jupyterlab/shortcuts-extension:plugin
+        // Keyboard shortcut settings for JupyterLab.
+        // ******************************************
+
+        // [missing schema title]
+        // [missing schema description]
+        "application:toggle-left-area": {
+          "command": "application:toggle-left-area",
+          "keys": [
+            "Ctrl '"
+          ],
+          "selector": "body",
+          "title": "Toggle Left Area",
+          "category": "Main Area"
+        },
+
+        // [missing schema title]
+        // [missing schema description]
+        "notebook:split-cell-at-cursor": {
+          "command": "notebook:split-cell-at-cursor",
+          "keys": [
+            "Ctrl Alt Shift -"
+          ],
+          "selector": ".jp-Notebook.jp-mod-editMode",
+          "title": "Split Cell at Cursor",
+          "category": "Notebook Operations"
+        }
+    }
+
+
+
 
 ### Uninstall
 
