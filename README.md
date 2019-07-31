@@ -51,9 +51,34 @@ Because some common emacs keybindings are already reserved by jupyter-lab, you m
                 "Ctrl Alt Shift -"
             ],
             "selector": ".jp-Notebook.jp-mod-editMode"
-          }
+          },
+	  {
+            "command": "apputils:print",
+            "keys":["Accel P"],
+            "selector": "body",
+            "disabled": true
+          },
+          {
+            "command": "documentsearch:start",
+            "keys": [
+                "Accel F"
+            ],
+            "selector": ".jp-mod-searchable",
+            "disabled": true
+          },
         ]
     }
+
+
+And because Chrome or Firefox tend to capture some shortcuts, it might help
+setting the Emacs key-theme for all GTK applications like this:
+
+    gsettings set org.gnome.desktop.interface gtk-key-theme "Emacs"
+
+or by editing `~/.config/gtk-3.0/settings.ini` like this:
+
+    [Settings]
+    gtk-key-theme-name = Emacs
 
 
 ### Uninstall
