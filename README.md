@@ -32,41 +32,52 @@ jupyter labextension install jupyterlab-emacskeys
 
 ### Tweaks
 
-Because some common emacs keybindings are already reserved by jupyter-lab, you might have to reassign them (see issue #1), i.e.:
+Because some common emacs keybindings are already reserved 
+in jupyter-lab, you will have to disable them like this (see issue #1), i.e.:
 
 
     {
     
-        "shortcuts": [
-          {
-            "command": "application:toggle-left-area",
-            "keys": [
-                "Ctrl '"
-            ],
-            "selector": "body"
-          },
-          {
-            "command": "notebook:split-cell-at-cursor",
-            "keys": [
-                "Ctrl Alt Shift -"
-            ],
-            "selector": ".jp-Notebook.jp-mod-editMode"
-          },
-	  {
-            "command": "apputils:print",
-            "keys":["Accel P"],
-            "selector": "body",
-            "disabled": true
-          },
-          {
-            "command": "documentsearch:start",
-            "keys": [
-                "Accel F"
-            ],
-            "selector": ".jp-mod-searchable",
-            "disabled": true
-          },
-        ]
+	    "shortcuts": [
+	        {
+	            "command": "application:toggle-left-area",
+	            "keys": [
+	                "Accel B"
+	            ],
+	            "selector": "body",
+	            "disabled": true
+	        },
+	        {
+	            "command": "application:close",
+	            "keys": [
+	                "Alt W"
+	            ],
+	            "selector": ".jp-Activity",
+	            "disabled": true
+	        },
+	        {
+	            "command": "notebook:split-cell-at-cursor",
+	            "keys": [
+	                "Ctrl Shift -"
+	            ],
+	            "selector": ".jp-Notebook.jp-mod-editMode",
+	            "disabled": true
+	        },
+	        {
+	            "command": "apputils:print",
+	            "keys":["Accel P"],
+	            "selector": "body",
+	            "disabled": true
+	        },
+	        {
+	            "command": "documentsearch:start",
+	            "keys": [
+	                "Accel F"
+	            ],
+	            "selector": ".jp-mod-searchable",
+	            "disabled": true
+	        },
+	    ]
     }
 
 
