@@ -1,7 +1,7 @@
 # jupyterlab-emacskeys
 
 [![npm version](https://badge.fury.io/js/jupyterlab-emacskeys.svg)](https://www.npmjs.com/package/jupyterlab-emacskeys)
-[![Build Status](https://travis-ci.org/kpe/jupyterlab-emacskeys.svg?branch=master)](https://travis-ci.org/kpe/jupyterlab-emacskeys.svg?branch=master)
+[![Build Status](https://travis-ci.org/kpe/jupyterlab-emacskeys.svg?branch=master)](https://travis-ci.org/kpe/jupyterlab-emacskeys)
 [![npm downloads](https://img.shields.io/npm/dw/jupyterlab-emacskeys.svg)](https://www.npmjs.com/package/jupyterlab-emacskeys)
 
 Currently JupyterLab seems to support emacs keybindings only in its text editor,
