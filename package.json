@@ -1,6 +1,6 @@
 {
 		"name": "jupyterlab-emacskeys",
-		"version": "0.8.0",
+		"version": "0.9.0",
 		"description": "Emacs keybindings inside the notebook cells of JupyterLab.",
 		"author": "kpe",
 		"main": "lib/index.js",
